@@ -15,25 +15,25 @@ const Dashboard = () => {
     if (strike >= 3) {
         setBall(0);
         setStrike(0);
-    }
+    };
 
     if (ball >= 4) {
         setBall(0);
         setStrike(0);
-    }
+    };
 
     if (inning >= 10) {
         setInning(1);
-    }
+    };
 
     if (out >= 3){
         setOut(0);
-    }
+    };
 
     const hit = () => {
         setBall(0);
         setStrike(0);
-    }
+    };
 
     const foulBall = () => {
         if (strike === 0) {
@@ -50,27 +50,35 @@ const Dashboard = () => {
 
     const addStrike = () => {
         setStrike(strike + 1);
-    }
+    };
 
     const addBall = () => {
         setBall(ball + 1);
-    }
+    };
 
     const addInning = () => {
         setInning(inning + 1)
-    }
+    };
 
     const addOut = () => {
         setOut(out +1)
-    }
+    };
 
     const addRun = () => {
         setRun(run + 1)
-    }
+    };
 
     const addError = () => {
         setError(error + 1)
-    }
+    };
+
+    const resetRun = () => {
+        setRun(0)
+    };
+
+    const resetError = () => {
+        setError(0)
+    };
 
     return (
         <div>
@@ -89,7 +97,9 @@ const Dashboard = () => {
            <div className="run-error">
                <RunsandErrors run={run} error={error} />
                <button onClick={addRun}>Run</button>
+               <button onClick={resetRun}>Reset Run</button>
                <button onClick={addError}>Error</button>
+               <button onClick={resetError}>Reset Error</button>
            </div>
         </div>
     )
