@@ -6,6 +6,8 @@ const Dashboard = () => {
     const [ball, setBall] = useState(0);
     const [strike, setStrike] = useState(0);
     const [foul, setFoul] = useState(0);
+    const [inning, setInning] = useState(1);
+    const [out, setOut] = useState(0);
 
     if (strike >= 3) {
         setBall(0);
@@ -15,6 +17,14 @@ const Dashboard = () => {
     if (ball >= 4) {
         setBall(0);
         setStrike(0);
+    }
+
+    if (inning >= 10) {
+        setInning(1);
+    }
+
+    if (out >= 3){
+        setOut(0)
     }
 
     const hit = () => {
@@ -43,13 +53,28 @@ const Dashboard = () => {
         setBall(ball + 1);
     }
 
+    const addInning = () => {
+        setInning(inning + 1)
+    }
+
+    const addOut = () => {
+        setOut(out +1)
+    }
+
     return (
         <div>
-            <Display ball={ball} strike={strike} hit={hit} />
+           <div className='display'>
+           <Display ball={ball} strike={strike} hit={hit} />
             <button onClick={addStrike}>Strike</button>
             <button onClick={addBall}>Ball</button>
             <button onClick={foulBall}>Foul</button>
             <button onClick={hit}>Hit</button>
+           </div>
+           <div className="inning">
+               <Inning inning={inning} out={out} />
+               <button onClick={addInning}>Inning</button>
+               <button onClick={addOut}>Out</button>
+           </div>
         </div>
     )
 }

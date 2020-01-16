@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Inning = props => {
+    console.log(props);
     return (
         <div>
-            <p>Innings:</p>
-            <p>Outs:</p>
+            <p>Innings: {props.inning}</p>
+            <p>Outs: {props.out}</p>
         </div>
     )
 }
