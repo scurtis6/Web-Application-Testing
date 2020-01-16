@@ -6,11 +6,17 @@
   h1{
     color: white;
     background-color: darkslategray;
+
+    // background-color: rgb(1, 155, 155);
   }//closes h1
 
   .display{
-    border: 3px dotted darkgreen;
+    border: 5px dotted darkgreen;
     padding-bottom: 30px;
+
+    p{
+      color: darkred;
+    }
 
     button{
       background-color: darkgreen;
@@ -21,6 +27,43 @@
       background-color: lightgreen;
     }//closes button hover
   }// closes display
+  .inning{
+    border: 3px dotted darkslategray;
+    margin-top: 20px;
+    padding-bottom: 25px;
+
+    p{
+      color: cornflowerblue;
+    }
+
+    button{
+      color: darkslategray;
+      background-color: lightgreen;
+    }
+    button:hover{
+      background-color: darkslategray;
+      color: lightgreen;
+    }//closes button hover
+  }// closes .inning
+
+    .run-error{
+      border: 1px dotted darkslategray;
+      margin-top: 20px;
+      padding-bottom: 25px;
+
+      p{
+        color: darkcyan;
+      }
+
+      button{
+        background-color: darkslategray;
+        color: rgb(243, 243, 243);
+      }
+      button:hover{
+        color: darkslategray;
+        background-color: rgb(243, 243, 243);
+      }//closes button hover
+    }//closes .run-error
 }// closes .App
 
 
