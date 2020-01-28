@@ -105,4 +105,6 @@ const Dashboard = () => {
     )
 }
 
+// export { Dashboard, addBall }
 export default Dashboard;
+// export { addBall, addStrike };
