@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  max-width: 1000px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.App h1 {
+  color: white;
+  background-color: darkslategray;
+}
+
+.App .display {
+  border: 5px dotted darkgreen;
+  padding-bottom: 30px;
+}
+
+.App .display p {
+  color: darkred;
+}
+
+.App .display button {
+  background-color: darkgreen;
+  color: lightgreen;
+}
+
+.App .display button:hover {
+  color: darkgreen;
+  background-color: lightgreen;
+}
+
+.App .inning {
+  border: 3px dotted darkslategray;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+
+.App .inning p {
+  color: cornflowerblue;
+}
+
+.App .inning button {
+  color: darkslategray;
+  background-color: lightgreen;
+}
+
+.App .inning button:hover {
+  background-color: darkslategray;
+  color: lightgreen;
+}
+
+.App .run-error {
+  border: 1px dotted darkslategray;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+
+.App .run-error p {
+  color: darkcyan;
+}
+
+.App .run-error button {
+  background-color: darkslategray;
+  color: #f3f3f3;
+}
+
+.App .run-error button:hover {
+  color: darkslategray;
+  background-color: #f3f3f3;
+}
+/*# sourceMappingURL=App.css.map */
